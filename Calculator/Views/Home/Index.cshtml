@@ -1,0 +1,35 @@
+﻿@model Calculator.Models.calc
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+
+    <h1 class="display-4">Simple Calculator</h1>
+    <form asp-action="Index">
+
+        <label>Firts Value</label>
+        <p><input type="number" asp-for="value1"/></p>
+        <label>Second Value</label>
+         <p><input type="number" asp-for="value2"/></p>
+
+          <p><input type="submit" asp-for="calculate" value="add"/></p>
+
+           <p><input type="submit" asp-for="calculate" value="sub"/></p>
+
+           <p><input type="submit" asp-for="calculate" value="div"/></p>
+
+           <p><input type="submit" asp-for="calculate" value="mul"/></p>
+
+           <label>Result</label>
+            <p><input type="number" asp-for="@ViewData["result"]"/></p>
+
+             
+
+
+
+
+    </form>
+
+</div>
